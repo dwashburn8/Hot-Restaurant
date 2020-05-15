@@ -25,6 +25,10 @@ app.get("/makereservation", (req,res)=>{
     res.sendFile(__dirname + "/public/makeReservation.html")
 })
 
+app.get("/makereservationAlert", (req,res)=>{
+    res.sendFile(__dirname + "/public/alert.html")
+})
+
 app.get("/reservations", (req,res)=>{
     res.sendFile(__dirname + "/public/reservations.html")
 })

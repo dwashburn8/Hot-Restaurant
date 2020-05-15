@@ -1,6 +1,6 @@
 $(document).ready(()=>{
     $("#submit").on("click", function(event){
-        event.preventDefault();
+        // event.preventDefault();
         console.log("working");
         
         let newCustomer = {
@@ -13,12 +13,11 @@ $(document).ready(()=>{
         $.post("/api/reservations", newCustomer)
         .then(function(data){
             if(data){
-                alert("adding...")
 
             }
         });
 
-        location.reload()
+        // location.reload()
     })
 
 
